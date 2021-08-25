@@ -14,13 +14,13 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.staff)
+    // console.log(this.state.staff)
     return (
       <div className="App">
         <header className="App-header">
           <h1>Turing Yearbook</h1>
         </header>
-        YOUR CODE GOES HERE
+        <Cohort staff={this.state.staff}/>
       </div>
     );
   }
