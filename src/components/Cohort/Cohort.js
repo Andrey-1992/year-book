@@ -3,11 +3,23 @@ import Person from '../Person/Person';
 import './Cohort.css';
 
 const Cohort = ({staff}) => {
-    const test = staff.map(staff => console.log(staff.name))
-    // console.log(staff)
+
+    const staffInfo = staff.map(staffInfo => {
+        return (
+            <Person 
+            id={staffInfo.id}
+            name={staffInfo.name}
+            quote={staffInfo.quote}
+            superlative={staffInfo.superlative}
+            photo={staffInfo.photo}
+            key={staffInfo.id}
+            />
+        )
+    })
+
     return (
-        <div>
-            <h2>{test}</h2>
+        <div className="staff-cards-container">
+            <h2>{staffInfo}</h2>
         </div>
     )
 }

@@ -16,12 +16,12 @@ class App extends Component {
   render() {
     // console.log(this.state.staff)
     return (
-      <div className="App">
+      <main className="App">
         <header className="App-header">
           <h1>Turing Yearbook</h1>
         </header>
         <Cohort staff={this.state.staff}/>
-      </div>
+      </main>
     );
   }
 }
